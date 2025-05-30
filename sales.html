@@ -14,30 +14,67 @@
   </div>
 <div class="d-flex justify-content-center align-items-center" style="min-height: 40vh;">
   <div>
+    <div class="d-flex w-100">
     <h1>Sales</h1>
+    <p class="ms-auto align-self-end">ID: <span id="Sales-counter">003</span> </p>
+    </div>
+    
     <div class="Fields">
         <!--Auto-gen sale receipt counter-->
         <form>
-        <span><p>Sale ID: </p><p id="ID_Count"></p></span>
-        <div class="container mt-4">
-        <div class="input-group">
+        <div class="container ps-0">
+        <div class="input-group pb-5">
         <input type="text" id="datepicker" class="form-control" placeholder="Select date">
         <button class="btn btn-outline-secondary" id="todayBtn">Today</button>
         </div>
         </div>
-        <label for="buyer">Buyer:</label><br>
-        <select id="customers name="buyer">
-        <option value="General">General Customer</option> 
-        </select> <br>
-        <label for="item">Item:</label>
-        <select name="item" id="item">
-          <option value="soda">Soda 1</option>
-        </select>
+        <div class="productinfo">
+          <div class="buyer d-flex align-content-center gap-2">
+        <label for="buyer" class="align-self-center">Buyer:</label><br>
+        <button class="btn btn-secondary dropdown-toggle bg-white text-black" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        General Customer</button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+          </div>
+          <div class="item d-flex align-content-center pt-3 gap-4">
+          <label for="item" class="align-self-center">Item:</label>
+          <button class="btn btn-secondary dropdown-toggle bg-white text-black" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Pepsi 500ml</button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+          </div>
         <!--Qty btn switches based on type, grey out textbox-->
-        <label for="Qty">Qty:</label>
-        <input type="number" id="qty" name="Qty">
-        <button class="btn btn-light">Pack</button>
+        <div class="qty d-flex gap-2">
+        <label for="Qty" class="align-self-center">Qty:</label>
+        <input type="number" id="qty" name="Qty" class="rounded-2 w-25">
+        <button class="btn btn-dark">Pack</button>
+        </div>
+        
+        </div>
+        <div class="prices d-flex pt-5 gap-5">
+          <div class="unitprice d-flex gap-2 align-content-center">
+        <p class="align-self-center">Unit Price:</p>
+        <h4>3,000ksh</h4>
+          </div>
+        <div class="totalprice d-flex gap-2 align-content-center">
+        <p class="align-self-center">Total:</p>
+        <h2 class="align-self-center">5,000ksh</h2>
+        </div>
+        </div>
+        <button class="btn btn-dark">Submit</button>
+        
         </form>
+<br>
+
+        
+        
+
+
         
 
 
